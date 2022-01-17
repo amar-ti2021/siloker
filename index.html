@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Siloker</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-uppercase fw-bold elevation-2 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white ps-4" href="#">SILOKER-NF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="javascript:void(0)"
+                            onclick="pagination('landing.html')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="javascript:void(0)"
+                            onclick="pagination('lowongan_baru.html')">lowongan
+                            baru</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">isi loker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">daftar mitra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Berita</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group text-black">
+                        <i class="fa fa-search position-absolute pl-5"></i>
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </div>
+                    <button type="button" class="btn btn-light ms-3 text-primary rounded" data-toggle="modal"
+                        data-target="#modal-login">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content (IFRAME) -->
+    <iframe id="my-frame" src="" frameborder="0" style="width: 100%;" onload="resizeIframe(this)"
+        scrolling="no"></iframe>
+
+    <!-- Footer  -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-6 col-xl-5 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>SILOKER-NF
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta natus praesentium assumenda
+                            aliquam
+                            sapiente quisquam nihil et illo qui laboriosam.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Lowongan Baru</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Isi Loker</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Daftar Mitra</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Berita</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Depok, Jawa Barat, ID</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            admin@siloker.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 62 812 1234 5678</p>
+                        <p><i class="fas fa-print me-3"></i> + 62 813 8765 4321</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Developer SIKAT-WEB By Mahasiswa STT-NF </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Modals  -->
+    <!-- Modal Login -->
+    <div class="modal fade" id="modal-login">
+        <div class="modal-dialog">
+            <div class="modal-content card card-primary rounded">
+                <div class="card-header">
+                    <h3 class="card-title mt-2">
+                        <i class="fa fa-sign-in fa"></i> Login
+                    </h3>
+                    <button type="button" class="close text-white mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times fa-xs"></i></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email atau Username">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div>
+                        Belum punya akun?
+                        <a class="text-primary" data-dismiss="modal" data-toggle="modal"
+                            data-target="#modal-register">Register</a>
+                    </div>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- Modal Register  -->
+    <div class="modal fade" id="modal-register">
+        <div class="modal-dialog">
+            <div class="modal-content card card-primary rounded">
+                <div class="card-header">
+                    <h3 class="card-title mt-2">
+                        <i class="fas fa-edit"></i> Register
+                    </h3>
+                    <button type="button" class="close text-white mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times fa-xs"></i></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Retype-Password">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div>
+                        Sudah punya akun?
+                        <a class="text-primary" data-dismiss="modal" data-toggle="modal"
+                            data-target="#modal-login">Login</a>
+                    </div>
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScripts -->
+    <script>
+        window.onload = function () {
+            let myframe = document.getElementById("my-frame");
+            if (localStorage.hasOwnProperty("current_page") === false) {
+                localStorage.setItem("current_page", "landing.html");
+                myframe.src = localStorage.getItem("current_page");
+            } else {
+                myframe.src = localStorage.getItem("current_page");
+            }
+        }
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            document.title = obj.contentWindow.document.title;
+        }
+        function pagination(halaman) {
+            let page = halaman;
+            localStorage.setItem("current_page", halaman);
+            let myframe = document.getElementById("my-frame");
+            myframe.src = page;
+            myframe.style.height = 0 + 'px';
+        }
+        function responsiveIframe() {
+            let myframe = document.getElementById("my-frame");
+            myframe.style.height = 0 + 'px';
+            myframe.style.height = myframe.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+        window.addEventListener('resize', responsiveIframe);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+
+</body>
+
+</html>
