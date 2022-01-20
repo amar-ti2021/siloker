@@ -75,3 +75,12 @@ function validasi() {
   }
 
 }
+function login(){
+  let uname = document.getElementById("uname").value;
+  let passw = document.getElementById("passw").value;
+  console.log("login")
+  if(uname == "admin" && passw == "admin"){
+    console.log("success")
+    window.location.replace("./admin/admin-loker.html");
+  }
+}
