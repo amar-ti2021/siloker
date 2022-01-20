@@ -37,13 +37,58 @@
 
 <body>
   <!-- my info  -->
+  <div class="position-fixed" style="z-index: 10; left: 50%; transform: translate(-50%, 0); min-width: 300px" >
+    <div class="toast" id="toastXYZ" style="background-color: white; width: fit-content;">
+      <div class="toast-header">
+        <strong class="me-auto"><i class="fa fas-info"></i>
+          <h4> Lowongan PT XYZ </h4>
+        </strong>
+        <small>2 Feb 2022</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <p>PT ABC Bergerak di Bidang Property yang sedang berkembang, membutuhkan profesional IT yang dapat bekera
+          secara tim,<br> inisiatif tinggi, fast learner dan berkepribadian baik.<br>
+          Kualifikasi yang kami butuhkan: <br>
+          1.Sarjana Ilmu Komputer <br>
+          2. Menguasai Bahasa Pemprograman Java <br>
+          3. Menguasai teknologi Framework Spring, EJB, MyBatis <br>
+          4. Menguasai Database MySQL, PostgretSQL <br>
+          5. Tidak Merorok</p> <br>
+        <p>Berminat Silahkan Emamil kami di: hrd@devxbata.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="position-fixed" style="z-index: 10; left: 50%; transform: translate(-50%, 0); min-width: 300px;">
+    <div class="toast" id="toastABC" style="background-color: white; width: fit-content;">
+      <div class="toast-header">
+        <strong class="me-auto"><i class="fa fas-info"></i>
+          <h4> Lowongan PT ABC </h4>
+        </strong>
+        <small>2 Feb 2022</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        <p>PT ABC Bergerak di Bidang Property yang sedang berkembang, membutuhkan profesional IT yang dapat bekera
+          secara tim,<br> inisiatif tinggi, fast learner dan berkepribadian baik.<br>
+          Kualifikasi yang kami butuhkan: <br>
+          1.Sarjana Ilmu Komputer <br>
+          2. Menguasai Bahasa Pemprograman Java <br>
+          3. Menguasai teknologi Framework Spring, EJB, MyBatis <br>
+          4. Menguasai Database MySQL, PostgretSQL <br>
+          5. Tidak Merorok</p> <br>
+        <p>Berminat Silahkan Emamil kami di: hrd@devxbata.com</p>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid">
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-md-9 mt-2 ">
         <div class="row">
-          <div class="col-md-12 p-5 bg-light">
+          <div class="col-md-12 px-5">
             <nav class="d-flex justify-content-end">
-              <ol class="breadcrumb">
+              <ol class="breadcrumb" style="background-color: white;">
                 <li class="breadcrumb-item">
                   <a href="#">Home</a>
                 </li>
@@ -52,6 +97,10 @@
                 </li>
               </ol>
             </nav>
+          </div>
+        </div>
+        <div class="row p-4">
+          <div class="col-md-12 p-4 elevation-1">
             <h3>Lowongan PT ABC</h3>
             <p>Dibutuhkan Programmer Web <br>Kualifikasi:</p>
             <ul>
@@ -59,9 +108,11 @@
               <li>Menguasai Java, Spring Framewok</li>
               <li>MvSQL. PostareSQL</li>
             </ul>
-            <p>2 Des 2021, <a href="">Lihat Detail</a></p>
+            <p>2 Des 2021, <a class="text-primary" id="detailABC">Lihat Detail</a> </p>
           </div>
-          <div class="col-md-12 p-5">
+        </div>
+        <div class="row p-4">
+          <div class="col-md-12 p-4 elevation-1">
             <h3>Lowongan PT XYZ</h3>
             <p>Dibutuhkan Programmer Web <br>Kualifikasi:</p>
             <ul>
@@ -69,37 +120,39 @@
               <li>Menguasai Java, Spring Framewok</li>
               <li>MvSQL. PostareSQL</li>
             </ul>
-            <p>2 Des 2021, <a href="">Lihat Detail</a></p>
+            <p>2 Des 2021, <a class="text-primary" id="detailXYZ">Lihat Detail</a></p>
           </div>
         </div>
-        <nav class="d-flex justify-content-center">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#">Previous</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">4</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">5</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="row">
+          <nav class="d-flex justify-content-center">
+            <ul class="pagination elevation-1">
+              <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="col-md-3 mt-2">
-        <div class="list-group">
+        <div class="list-group elevation-1">
           <h5 class="list-group-item list-group-item-action active">Berita Terbaru</h5>
           <div class="list-group-item">
             <a href="#" class="text-decoration-none text-black">Berita 1</a>
@@ -137,10 +190,35 @@
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
- </body>
- 
- </html>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var btnABC = document.getElementById("detailABC");
+      var elementABC = document.getElementById("toastABC");
+
+      // Create toast instance
+      var toastABC = new bootstrap.Toast(elementABC);
+
+      btnABC.addEventListener("click", function () {
+        toastABC.show();
+        parent.window.scrollTo(0,0);
+      });
+
+      var btnXYZ = document.getElementById("detailXYZ");
+      var elementXYZ = document.getElementById("toastXYZ");
+
+      // Create toast instance
+      var toastXYZ = new bootstrap.Toast(elementXYZ);
+
+      btnXYZ.addEventListener("click", function () {
+        toastXYZ.show();
+        parent.window.scrollTo(0,0);
+      });
+    });
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
