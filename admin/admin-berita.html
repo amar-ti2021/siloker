@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin | Mitra</title>
+  <title>Admin | Loker</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -67,6 +67,7 @@
         <!-- Messages Dropdown Menu -->
 
         <!-- Notifications Dropdown Menu -->
+
         <li class="nav-item">
           <a class="nav-link" data-widget="fullscreen" href="#" role="button">
             <i class="fas fa-expand-arrows-alt"></i>
@@ -128,13 +129,13 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./admin-loker.html" class="nav-link">
+                  <a href="./admin-loker.html" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Loker</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./admin-mitra.html" class="nav-link active">
+                  <a href="./admin-mitra.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Mitra</p>
                   </a>
@@ -170,13 +171,13 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Kelola Mitra</h1>
+              <h1 class="m-0">Kelola Lowongan Kerja</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="admin-loker.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="admin-loker.html">Admin</a></li>
-                <li class="breadcrumb-item active">Kelola Mitra</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                <li class="breadcrumb-item active">Kelola Berita</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -194,8 +195,7 @@
               <div class="card">
                 <div class="card-header">
                   <h3 class="card-title"> <button type="button" class="btn btn-block btn-primary" data-toggle="modal"
-                      data-target="#modal-default">
-                      <i class="fas fa-plus"></i> Tambah</button></h3>
+                      data-target="#modal-default"><i class="fas fa-plus"></i> Tambah</button></h3>
 
                   <div class="card-tools">
                     <div class="input-group input-group-sm" style="width: 150px;">
@@ -215,31 +215,22 @@
                     <thead>
                       <tr>
                         <th>No</th>
-                        <th>Nama Perusahaan</th>
-                        <th>Bidang Usaha</th>
-                        <th>Kontak Person</th>
-                        <th>Email</th>
-                        <th>Telepon</th>
-                        <th>Alamat Web</th>
-                        <th>Action</th>
+                        <th>Judul Berita</th>
+                        <th>Isi</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td>PT ABC</td>
-                        <td>Property</td>
-                        <td>Ahmad Fikri</td>
-                        <td>fikri@abc.com</td>
-                        <td>Telepon</td>
-                        <td>Https://abc.com</td>
+                        <td>6 Pekerjaan Bergaji Tinggi untuk yang Baru Lulus...</td>
+                        <td>Bagi para fresh graduate, memilih pekerjaan pertama tentunya sangatl...</td>
                         <td>
                           <div class="btn-group">
                             <button type="button" class="btn btn-default">
                               <i class="fas fa-info-circle"></i>
                             </button>
                             <button type="button" class="btn btn-default" data-toggle="modal"
-                            data-target="#modal-default">
+                              data-target="#modal-default">
                               <i class="fas fa-edit"></i>
                             </button>
                             <button type="button" class="btn btn-default">
@@ -260,7 +251,6 @@
       </section>
     </div>
 
-
     <!-- /.card -->
     <div class="modal fade" id="modal-default">
       <div class="modal-dialog">
@@ -268,7 +258,7 @@
 
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">Tambah Mitra</h3>
+              <h3 class="card-title">Tambah Berita</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -278,28 +268,12 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="nama-perusahaan">Nama Perusahaan</label>
+                <label for="nama-perusahaan">Judul Berita</label>
                 <input type="text" id="nama-perusahaan" class="form-control">
               </div>
               <div class="form-group">
-                <label for="bidang-usaha">Bidang Usaha</label>
-                <input type="text" id="bidang-usaha" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="kontak-person">Kontak Person</label>
-                <input type="text" id="kontak-person" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="telepon">Telepon</label>
-                <input type="text" id="telepon" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="alamat-web">Alamat Web</label>
-                <input type="text" id="alamat-web" class="form-control">
+                <label for="deskripsi-lowongan">Isi Berita</label>
+                <textarea id="deskripsi-lowongan" class="form-control"></textarea>
               </div>
             </div>
             <!-- /.card-body -->
@@ -315,6 +289,7 @@
       </div>
       <!-- /.modal-dialog -->
     </div>
+
 
 
     <!-- jQuery -->
